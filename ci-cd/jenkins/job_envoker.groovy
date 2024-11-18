@@ -272,8 +272,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchPerSubEnvironment', value: infraConfigsBranchPerSubEnvironmentValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchCommon', value: infraConfigsBranchCommonValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'InfraCommonFolder', value: 'core_platform_backend'],
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'core_platform_backend#https://example-example'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'core_platform_backend#https://example-example']
                     ]
                     // Define params for platform_frontend
                     def frontendParams = [
@@ -286,8 +285,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchPerSubEnvironment', value: infraConfigsBranchPerSubEnvironmentValue],
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchCommon', value: infraConfigsBranchCommonValue],
                         [$class: 'StringParameterValue', name: 'InfraCommonFolder', value: 'platform_frontend'],
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_frontend#https://example-example'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_frontend#https://example-example']
                     ]
                     // Define params for platform_marketing_tech
                     def marTechParams = [
@@ -300,8 +298,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchPerSubEnvironment', value: infraConfigsBranchPerSubEnvironmentValue],
                         [$class: 'StringParameterValue', name: 'InfraConfigsBranchCommon', value: infraConfigsBranchCommonValue],
                         [$class: 'StringParameterValue', name: 'InfraCommonFolder', value: 'platform_marketing_tech'],
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_marketing_tech#https://platform_marketing_tech.cdn'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_marketing_tech#https://platform_marketing_tech.cdn']
                     ]
 
                     // Define the execution action
@@ -356,8 +353,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'Build', value: buildValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBranch', value: PlatformBranchValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBuild', value: PlatformBuildValue], // Placeholder
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'core_platform_backend#https://example-example'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'core_platform_backend#https://example-example']
                     ]
                     // Define params for platform_frontend
                     def frontendParams = [
@@ -369,8 +365,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'Build', value: buildValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBranch', value: PlatformBranchValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBuild', value: PlatformBuildValue], // Placeholder
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_frontend#https://example-example'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_frontend#https://example-example']
                     ]   
                     // Define params for platform_marketing_tech
                     def marTechParams = [
@@ -382,8 +377,7 @@ pipeline {
                         [$class: 'StringParameterValue', name: 'Build', value: buildValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBranch', value: PlatformBranchValue], // Placeholder
                         [$class: 'StringParameterValue', name: 'PlatformBuild', value: PlatformBuildValue], // Placeholder
-                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_marketing_tech#https://platform_marketing_tech.cdn'] // AMT has added an additional string paramater, which is not yet active but input is required if the job is triggered programmaticdnlly.
-                    //    [$class: 'BooleanParameterValue', name: 'Dry Run', value: false]
+                        [$class: 'StringParameterValue', name: 'Environments', value: 'platform_marketing_tech#https://platform_marketing_tech.cdn']
                     ]
 
                     // Define the execution action
