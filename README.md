@@ -1,6 +1,6 @@
 # general-system-automation
 
-NOTE: Monorepo stucture
+NOTE: Monorepo
 
 This repository contains various automation scripts developed over the years of my work, based on different systems: Windows, Linux, Mac.. along infrastructure automation with Jenkins &amp; other tools, for example. 
 
